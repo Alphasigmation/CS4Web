@@ -3,63 +3,75 @@
  <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="site.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <title>Lakeside Crew Memes</title>
     </head>
     <body>
-        <div class="navbar">
-            <h1>Lakeside Crew Memes</h1>
-            <ul>
-                <li><a href="#">Top</a></li>
-                <li><a href="#">Hot</a></li>
-                <li><a href="#">Create New</a></li>
-            </ul>
-            <a href="#">Profile</a>
+        <ul class="navbar-list">
+            <li class="dropdown">
+                <a href="#" class="dropdownbtn">Lakeside Crew Memes</a>
+                <div class="dropdown-content">
+                    <a href="#">Top</a>
+                    <a href="#">Hot</a>
+                    <a href="#">Create New</a>
+                </div>
+            </li>     
+            <li><i href="#" class="material-icons md-24 profile" alt="profile">account_circle</i></li>
+        </ul>
+        <div class="center-this">
+            <p>
+                Here you can add some top-quality rowing memes, for example <a href="https://www.pinterest.com/explore/rowing-memes">this</a>
+            </p>
         </div>
-        <p>
-            Here you can add some top-quality rowing memes, for example <a href="https://www.pinterest.com/explore/rowing-memes">this</a>
-        </p>
         <div class="memes">
-            <ul>
+            <ul class="meme-list">
                 <li>
                     <div class="meme">
-                        <table>
-                            <tr>
-                                <th>Try crew cuz it's fun</th>
-                            </tr>
-                            <tr>
-                                <td><img src="meme.jpg" alt=":)" height="360" width="720"/></td>
-                            </tr>
-                            <tr>
-                                <td>This a really funny meme, please keep posting such high quality content</td>
-                            </tr>
-                        </table>
+                        <div class="meme-title">
+                            <h1>Try crew cuz it's fun</h1>
+                        </div>
+                        <img class="meme-image" src="meme.jpg" alt=":)"/>
+                        <div class="meme-comments">
+                            <h2>Comments</h2>
+                            <p>This a really funny meme, please keep posting such high quality content</p>
+                        </div>
                     </div>
-                    <hr />
                 </li>
                 <li>
                     <div class="meme">
-                        <table>
-                            <tr>
-                                <th>Funny rowing video</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <video controls>
-                                        <source src="fail.mp4" type="video/mp4">
-                                    </video>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ha ha I love this</td>
-                            </tr>
-                        </table>
+                        <div class="meme-title">
+                            <h1>Funny rowing video</h1>
+                        </div>
+                        <div class="meme-video">
+                            <video controls>
+                                <source src="fail.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="meme-comments">
+                            <h2>Comments</h2>
+                            <p>This a really funny meme, please keep posting such high quality content</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="meme">
+                        <div class="meme-title">
+                            <h1>Random song</h1>
+                        </div>
+                        <div class="meme-video">
+                            <audio controls>
+                                <source src="funny.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="meme-comments">
+                            <h2>Comments</h2>
+                            <p>Wow what a funny song</p>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
-        <h3>Have a funny song:</h3>
-        <audio controls>
-            <source src="funny.mp3" type="audio/mpeg">
-        </audio>
     </body>
 </html>
