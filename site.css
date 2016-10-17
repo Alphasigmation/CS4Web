@@ -59,6 +59,8 @@ body {
 
 
 .navbar-list {
+    top: 0;
+    width: 100%;
     left: 0;
     margin: 0 0;
     padding: 0;
@@ -97,8 +99,7 @@ body {
 }
 
 .meme-title {
-    padding: 2px 16px;
-}
+    padding: 2px 16px;}
 
 .meme-video {
     width: 100%;
@@ -133,19 +134,11 @@ body {
     padding: 20px;
     border: 1px solid #555;
     width: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation: animateTop 0.4s;
 }
 
-@-webkit-keyframes animatetop{
-    from{top:-300px, opacity: 0}
-    top{top: 0px, opacity: 1}
-}
-
-@keyframes animatetop{
-    from{top: -300px, opacity: 0}
-    to{top: 0px, opacity: 1}
+@keyframes animateTop {
+    0% {top: -300px; opacity: 0}
+    100% {top: 0px; opacity: 1}
 }
