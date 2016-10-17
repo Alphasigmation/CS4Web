@@ -18,7 +18,7 @@
                     <a href="#">Create New</a>
                 </div>
             </li>     
-            <li><i href="#" class="material-icons md-24 profile" alt="profile">account_circle</i></li>
+            <li><i href="#" class="material-icons md-24 profile" alt="profile" id="profileBtn">account_circle</i></li>
         </ul>
         <div class="center-this">
             <p>
@@ -73,5 +73,23 @@
                 </li>
             </ul>
         </div>
+        <div class="login-modal" id="loginModal">
+            <div class="login-content">
+                <p>WIP...</p>
+            </div>
+        </div>
     </body>
+    <script type="text/javascript">
+        var modal = document.getElementById("loginModal");
+
+        document.getElementById("profileBtn").onclick = function(){
+            modal.style.display = "block";
+        }
+
+        window.onclick = function(event){
+            if(event.target == modal){
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </html>
